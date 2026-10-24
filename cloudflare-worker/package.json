@@ -1,0 +1,24 @@
+{
+  "name": "codex-reset-notifier-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Separate Codex reset forecasts and reset confirmations for WeCom and Feishu, running on Cloudflare Workers.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build:check": "node scripts/check-build.mjs",
+    "deploy": "wrangler deploy --config wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  },
+  "overrides": {
+    "miniflare": {
+      "undici": "7.30.1"
+    }
+  }
+}

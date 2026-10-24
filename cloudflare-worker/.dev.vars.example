@@ -1,0 +1,9 @@
+# Local examples only. Production credentials belong in Cloudflare Secrets.
+# Do not run a Worker with real webhook values unless you intend to send messages.
+WECOM_WEBHOOK_URL="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=YOUR_WECOM_RESET_KEY"
+WECOM_SCHEDULED_WEBHOOK_URL="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=YOUR_WECOM_SCHEDULED_KEY"
+FEISHU_ENABLED="false"
+FEISHU_DELIVERY_MODE="group_webhook"
+FEISHU_GROUP_ID="oc_mygroup"
+FEISHU_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/YOUR-FEISHU-RESET-HOOK"
+FEISHU_SCHEDULED_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/YOUR-FEISHU-SCHEDULED-HOOK"

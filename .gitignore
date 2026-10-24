@@ -1,0 +1,25 @@
+# Dependencies and generated output
+node_modules/
+.wrangler/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+wrangler.jsonc
+wrangler.json
+wrangler.toml
+*.pem
+*.key
+
+# Local operating records do not belong in the public source repository
+项目接续要点*
+evidence/
+reports/
